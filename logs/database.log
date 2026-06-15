@@ -2953,3 +2953,48 @@ index creation(creation))
 			COLLATE=utf8mb4_unicode_ci
 2026-06-07 13:15:10,187 WARNING database DDL Query made to DB:
 ALTER TABLE `tabLoan` ADD COLUMN `applicant` varchar(140), ADD COLUMN `book` varchar(140), ADD COLUMN `transaction_date` date, ADD COLUMN `status` varchar(140)
+2026-06-08 15:42:05,666 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLoan` ADD COLUMN `amended_from` varchar(140)
+2026-06-08 15:42:05,707 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLoan` ADD INDEX `amended_from_index`(`amended_from`)
+2026-06-15 15:19:27,315 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLoan` ADD COLUMN `workflow_state` varchar(140)
+2026-06-15 15:51:28,582 WARNING database DDL Query made to DB:
+create table `tabAuthor Detail` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-06-15 15:52:18,925 WARNING database DDL Query made to DB:
+alter table `tabAuthor Detail` add column if not exists parent varchar(140)
+2026-06-15 15:52:18,927 WARNING database DDL Query made to DB:
+alter table `tabAuthor Detail` add column if not exists parenttype varchar(140)
+2026-06-15 15:52:18,929 WARNING database DDL Query made to DB:
+alter table `tabAuthor Detail` add column if not exists parentfield varchar(140)
+2026-06-15 15:52:19,036 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAuthor Detail` ADD COLUMN `author_name` varchar(140)
+2026-06-15 15:52:37,331 WARNING database DDL Query made to DB:
+alter table `tabAuthor Detail` add column if not exists parent varchar(140)
+2026-06-15 15:52:37,337 WARNING database DDL Query made to DB:
+alter table `tabAuthor Detail` add column if not exists parenttype varchar(140)
+2026-06-15 15:52:37,338 WARNING database DDL Query made to DB:
+alter table `tabAuthor Detail` add column if not exists parentfield varchar(140)
+2026-06-15 15:52:37,441 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAuthor Detail` ADD COLUMN `bio` text
+2026-06-15 15:55:11,083 WARNING database DDL Query made to DB:
+alter table `tabAuthor Detail` add column if not exists parent varchar(140)
+2026-06-15 15:55:11,084 WARNING database DDL Query made to DB:
+alter table `tabAuthor Detail` add column if not exists parenttype varchar(140)
+2026-06-15 15:55:11,086 WARNING database DDL Query made to DB:
+alter table `tabAuthor Detail` add column if not exists parentfield varchar(140)
