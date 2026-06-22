@@ -18,3 +18,7 @@ ALTER TABLE `tabLoan` ADD COLUMN `full_name` varchar(140)
 ALTER TABLE `tabLibrary Member` ADD COLUMN `full_name` varchar(140)
 2026-06-17 15:59:18,039 WARNING database DDL Query made to DB:
 ALTER TABLE `tabLoan` ADD COLUMN `return_date` date
+2026-06-17 16:10:26,795 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLoan` MODIFY `transaction_date` date
+2026-06-17 16:12:43,074 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLoan` MODIFY `transaction_date` date
