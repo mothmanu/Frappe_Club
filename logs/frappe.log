@@ -34,3 +34,12 @@ Form Dict: {'doc': '{"docstatus":0,"doctype":"Loan","name":"new-loan-odiqpsgudd"
 2026-06-17 13:07:06,958 ERROR frappe New Exception collected in error log
 Site: library.site
 Form Dict: {'doc': '{"docstatus":0,"doctype":"Loan","name":"new-loan-odiqpsgudd","__islocal":1,"__unsaved":1,"owner":"Administrator","transaction_date":"2026-06-17","status":"Draft","book":"The Cat And The Hat -00001","applicant":"MEM-00002"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-06-23 15:15:29,140 ERROR frappe New Exception collected in error log
+Site: library.site
+Form Dict: {'doctype': 'Loan', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-06-23 15:15:34,699 ERROR frappe New Exception collected in error log
+Site: library.site
+Form Dict: {'doctype': 'Loan', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-06-23 15:15:56,442 ERROR frappe New Exception collected in error log
+Site: library.site
+Form Dict: {'doctype': 'Loan', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
